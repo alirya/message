@@ -1,17 +1,11 @@
-import Name from "@dikac/t-object/string/name";
-import Sentences from "@dikac/t-string/message/sentences";
+import MessageParameter from "./message-parameter";
+import MessageParameters from "./message-parameters";
 
-export default function Message(
-    valid : boolean,
-    value : object,
-    subject : string = ''
-) : string {
 
-    let sentence = new Sentences(valid);
-    sentence.subject.push(subject, `"${Name(value)}"`);
-    sentence.reject.push('is not compatible with');
-    sentence.accept.push('is compatible with');
-    sentence.expect.push('Message type');
+export namespace Message {
 
-    return sentence.message;
+    export const Parameter = MessageParameter;
+    export const Parameters = MessageParameters;
 }
+
+export default Message;

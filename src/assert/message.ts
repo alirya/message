@@ -1,6 +1,6 @@
 import Guard from "../boolean/message";
-import Callback from "@dikac/t-function/assert/callback";
-import StringError from "./throwable/message";
+import Callback from "@dikac/t-function/assert/callback-parameters";
+import StringError from "./throwable/message-parameters";
 import MessageInterface from "../message";
 
 

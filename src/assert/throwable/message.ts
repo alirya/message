@@ -1,14 +1,11 @@
-import MessageType from "../string/message";
-import Callback from "@dikac/t-function/assert/throwable/callback";
+import MessageParameter from "./message-parameter";
+import MessageParameters from "./message-parameters";
 
-/**
- * @deprecated use {@link Callback} instead
- */
-export default function Message(
-    string : unknown,
-    message : (valid : boolean, value : unknown)=>string = MessageType,
-    error : (message:string)=>Error = (string : string) => new Error(string)
-) : Error {
 
-    return Callback([string], message, error);
+export namespace Message {
+
+    export const Parameter = MessageParameter;
+    export const Parameters = MessageParameters;
 }
+
+export default Message;

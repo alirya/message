@@ -8,11 +8,5 @@ export default function Message(
     value : object,
 ) : value is MessageInterface {
 
-    if(!ObjectProperty(value, 'message')) {
-
-        return false;
-    }
-
-    return true;
-
+    return ObjectProperty(value, 'message');
 }
