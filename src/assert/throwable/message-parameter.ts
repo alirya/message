@@ -1,6 +1,4 @@
-import MessageType from "../string/message-parameters";
-import Callback from "@dikac/t-function/assert/throwable/callback-parameters";
-import Dynamic from "@dikac/t-validator/message/function/dynamic-parameters";
+import Dynamic from "@dikac/t-validator/message/function/validatable-parameters";
 import Value from "@dikac/t-value/value";
 import Message from "../../message";
 import MessageParameters from "./message-parameters";
