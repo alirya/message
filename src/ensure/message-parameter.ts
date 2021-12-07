@@ -11,8 +11,6 @@ import MessageParameters from "./message-parameters";
  * throw {@link Error} from {@param error} if {@param value} is not compatible
  */
 export default function MessageParameter(
-    //value : object,
-    //error : (value:object)=>Error = MessageError,
     {
         value,
         error,
@@ -20,7 +18,4 @@ export default function MessageParameter(
 ) : MessageInterface {
 
     return MessageParameters(value, error);
-    // AssertString(value, error);
-    //
-    // return value;
 }

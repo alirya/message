@@ -1,5 +1,4 @@
 import Name from "@dikac/t-object/string/name";
-//import Sentences from "@dikac/t-string/message/sentences";
 
 export default function MessageParameters(
     value : object,

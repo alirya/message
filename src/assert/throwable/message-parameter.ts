@@ -3,11 +3,7 @@ import Value from "@dikac/t-value/value";
 import Message from "../../message";
 import MessageParameters from "./message-parameters";
 
-
 export default function MessageParameter(
-    //string : object,
-    //message : Dynamic<object, string> = MessageType,
-    //error : (message:string)=>Error = (string : string) => new Error(string),
     {
         value,
         message,
