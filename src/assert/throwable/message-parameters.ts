@@ -4,10 +4,10 @@ import Dynamic from "@dikac/t-validator/message/function/validatable-parameters"
 
 
 export default function MessageParameters(
-    string : object,
+    value : object,
     message : Dynamic<object, string> = MessageType,
     error : (message:string)=>Error = (string : string) => new Error(string)
 ) : Error {
 
-    return Callback([string, false], message, error);
+    return Callback([value, false], message, error);
 }
