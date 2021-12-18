@@ -1,11 +1,11 @@
-import Message from "../../../dist/assert/string/message";
+import Message from "../../../dist/assert/string/message-parameters";
 
 
 it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
 
 it('true valid', ()=>{
 
-    expect(Message(true, {message:1}, 'value')).toBe(
+    expect(Message({message:1}, true, 'value')).toBe(
         'value "Object" is compatible with Message type.'
     );
 
@@ -13,7 +13,7 @@ it('true valid', ()=>{
 
 it('true invalid', ()=>{
 
-    expect(Message(true, {}, 'value')).toBe(
+    expect(Message({}, true, 'value')).toBe(
         'value "Object" is compatible with Message type.'
     );
 
@@ -21,7 +21,7 @@ it('true invalid', ()=>{
 
 it('false valid', ()=>{
 
-    expect(Message(false, {message:1}, 'value')).toBe(
+    expect(Message({message:1}, false, 'value')).toBe(
         'value "Object" is not compatible with Message type.'
     );
 
@@ -29,7 +29,7 @@ it('false valid', ()=>{
 
 it('false invalid', ()=>{
 
-    expect(Message(false, {}, 'value')).toBe(
+    expect(Message({}, false, 'value')).toBe(
         'value "Object" is not compatible with Message type.'
     );
 
@@ -38,7 +38,7 @@ it('false invalid', ()=>{
 
 it('true invalid CLass', ()=>{
 
-    expect(Message(true, new Set(), 'argument')).toBe(
+    expect(Message(new Set(), true, 'argument')).toBe(
         'argument "Set" is compatible with Message type.'
     );
 
@@ -46,7 +46,7 @@ it('true invalid CLass', ()=>{
 
 it('false valid CLass', ()=>{
 
-    expect(Message(false, new Set(), 'argument')).toBe(
+    expect(Message(new Set(), false, 'argument')).toBe(
         'argument "Set" is not compatible with Message type.'
     );
 
