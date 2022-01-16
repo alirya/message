@@ -1,5 +1,5 @@
-import Dynamic from "@dikac/t-validator/message/function/validatable-parameters";
-import Value from "@dikac/t-value/value";
+import Dynamic from "@alirya/validator/message/function/validatable-parameters";
+import Value from "@alirya/value/value";
 import Message from "../../message";
 import MessageParameters from "./message-parameters";
 

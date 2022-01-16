@@ -1,5 +1,5 @@
 import Type from "../../../dist/message/boolean/message";
-import ObjectType from "@dikac/t-object/boolean/object";
+import ObjectType from "@alirya/object/boolean/object";
 import Message from "../../../dist/message";
 
 it("force console log", () => { spyOn(console, 'log').and.callThrough();});
@@ -14,7 +14,7 @@ describe(`compiler compatible`,function() {
 
     } else {
 
-        // @ts-expect-error
+        // @ts-expecerror
         let message : object = data.message;
     }
 

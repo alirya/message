@@ -1,5 +1,5 @@
 import MessageInterface from "../message";
-import ObjectProperty from "@dikac/t-object/property/boolean/exists";
+import ObjectProperty from "@alirya/object/property/boolean/exists";
 
 /**
  * check if {@param value} is compatible with {@link MessageInterface}

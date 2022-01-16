@@ -1,6 +1,6 @@
 import Message from "../message";
 import MessageParameters from "./message-parameters";
-import Value from "@dikac/t-value/value";
+import Value from "@alirya/value/value";
 
 export default function MessageParameter<MessageType extends Message>(
     {
