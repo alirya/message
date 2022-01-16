@@ -1,7 +1,7 @@
-import Message from "../../dist/assert/message";
-import MessageInterface from "../../dist/message";
+import Message from '../../dist/assert/message';
+import MessageInterface from '../../dist/message';
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 it(`compiler compatible`,function() {
 
@@ -22,7 +22,7 @@ it(`compiler compatible`,function() {
 });
 
 
-describe("boolean", function() {
+describe('boolean', function() {
 
     it(`true`, () => {
         try {
@@ -45,7 +45,7 @@ describe("boolean", function() {
 });
 
 
-describe("object", function() {
+describe('object', function() {
 
     it(`plain`, () => {
         try {
@@ -67,7 +67,7 @@ describe("object", function() {
 
 });
 
-describe("function", function() {
+describe('function', function() {
 
     it(`anonymous `, () => {
         try {

@@ -1,9 +1,9 @@
-import Value from "../../dist/message/value";
-import Message from "../../dist/message";
+import Value from '../../dist/message/value';
+import Message from '../../dist/message';
 
-it("force console log", () => { spyOn(console, 'log').and.callThrough();});
+it('force console log', () => { spyOn(console, 'log').and.callThrough();});
 
-describe("compiler compatible", function() {
+describe('compiler compatible', function() {
 
     let message : Message<string> = {message:'string'};
 
@@ -11,7 +11,7 @@ describe("compiler compatible", function() {
 
 });
 
-it("result equal", function() {
+it('result equal', function() {
 
     let message : Message<string> = {message:'string'};
 

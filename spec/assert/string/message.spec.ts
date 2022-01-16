@@ -1,7 +1,7 @@
-import Message from "../../../dist/assert/string/message-parameters";
+import Message from '../../../dist/assert/string/message-parameters';
 
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 it('true valid', ()=>{
 
@@ -50,4 +50,4 @@ it('false valid CLass', ()=>{
         'argument "Set" is not compatible with Message type.'
     );
 
-})
+});

@@ -1,4 +1,4 @@
-import Message from "../message";
+import Message from '../message';
 
 /**
  * get {@link Message.message} type

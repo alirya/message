@@ -1,6 +1,6 @@
-import MessageInterface from "../message";
-import Value from "@alirya/value/value";
-import MessageParameters from "./message-parameters";
+import MessageInterface from '../message';
+import Value from '@alirya/value/value';
+import MessageParameters from './message-parameters';
 
 /**
  * return {@param value} is compatible with {@link MessageInterface}

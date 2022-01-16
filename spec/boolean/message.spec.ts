@@ -1,7 +1,7 @@
-import Type from "../../dist/boolean/message";
-import Message from "../../dist/message";
+import Type from '../../dist/boolean/message';
+import Message from '../../dist/message';
 
-it("force console log", () => { spyOn(console, 'log').and.callThrough();});
+it('force console log', () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`compiler compatible`,function() {
 
@@ -16,55 +16,55 @@ describe(`compiler compatible`,function() {
 
 });
 
-describe("unvalidated value", function() {
+describe('unvalidated value', function() {
 
-    describe("valid", function() {
+    describe('valid', function() {
 
-        it("string", () => {
+        it('string', () => {
 
             let message = {message : 'string'};
-            expect(Type(message)).toBe(true)
+            expect(Type(message)).toBe(true);
 
         });
 
-        it("integer", () => {
+        it('integer', () => {
 
             let message = {message : 1};
-            expect(Type(message)).toBe(true)
+            expect(Type(message)).toBe(true);
 
         });
     });
 
-    describe("invalid", function() {
+    describe('invalid', function() {
 
-        it("string", () => {
+        it('string', () => {
 
             let message = {string:'string'};
-            expect(Type(message)).toBe(false)
+            expect(Type(message)).toBe(false);
 
         });
 
-        it("integer", () => {
+        it('integer', () => {
 
             let message = {integer:1};
-            expect(Type(message)).toBe(false)
+            expect(Type(message)).toBe(false);
 
         });
     });
-})
+});
 
 
-describe("validated value", function() {
+describe('validated value', function() {
 
-    describe("valid", function() {
+    describe('valid', function() {
 
-        it("object", () => {
+        it('object', () => {
 
             let message = {message :{}};
-            expect(Type(message)).toBe(true)
+            expect(Type(message)).toBe(true);
         });
 
-        it("class", () => {
+        it('class', () => {
 
             class C {
                 constructor(
@@ -72,19 +72,19 @@ describe("validated value", function() {
                 ){}
             }
 
-            expect(Type(new C)).toBe(true)
+            expect(Type(new C)).toBe(true);
         });
     });
 
-    describe("invalid message", function() {
+    describe('invalid message', function() {
 
-        it("object", () => {
+        it('object', () => {
 
             let message = {};
-            expect(Type(message)).toBe(false)
+            expect(Type(message)).toBe(false);
         });
 
-        it("class", () => {
+        it('class', () => {
 
             class C {
                 constructor(
@@ -92,7 +92,7 @@ describe("validated value", function() {
                 ){}
             }
 
-            expect(Type(new C)).toBe(false)
+            expect(Type(new C)).toBe(false);
         });
     });
-})
+});

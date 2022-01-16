@@ -1,7 +1,7 @@
-import Dynamic from "@alirya/validator/message/function/validatable-parameters";
-import Value from "@alirya/value/value";
-import Message from "../../message";
-import MessageParameters from "./message-parameters";
+import Dynamic from '@alirya/validator/message/function/validatable-parameters';
+import Value from '@alirya/value/value';
+import Message from '../../message';
+import MessageParameters from './message-parameters';
 
 export default function MessageParameter(
     {

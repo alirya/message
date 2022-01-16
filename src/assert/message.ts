@@ -1,7 +1,7 @@
-import Guard from "../boolean/message";
-import Callback from "@alirya/function/assert/callback-parameters";
-import StringError from "./throwable/message-parameters";
-import MessageInterface from "../message";
+import Guard from '../boolean/message';
+import Callback from '@alirya/function/assert/callback-parameters';
+import StringError from './throwable/message-parameters';
+import MessageInterface from '../message';
 
 
 /**

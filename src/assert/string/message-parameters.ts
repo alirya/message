@@ -1,4 +1,4 @@
-import Name from "@alirya/object/string/name";
+import Name from '@alirya/object/string/name';
 
 export default function MessageParameters(
     value : object,
@@ -19,7 +19,7 @@ export default function MessageParameters(
         strings.push('is not compatible with');
     }
 
-    strings.push('Message type')
+    strings.push('Message type');
 
     return strings.join(' ') + '.';
 }

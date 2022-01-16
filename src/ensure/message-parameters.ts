@@ -1,6 +1,6 @@
-import AssertString from "../assert/message";
-import MessageError from "../assert/throwable/message-parameters";
-import MessageInterface from "../message";
+import AssertString from '../assert/message';
+import MessageError from '../assert/throwable/message-parameters';
+import MessageInterface from '../message';
 
 /**
  * return {@param value} is compatible with {@link MessageInterface}

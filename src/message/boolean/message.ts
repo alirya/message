@@ -1,4 +1,4 @@
-import MessageInterface from "../../message";
+import MessageInterface from '../../message';
 
 export default function Message<
     Type
