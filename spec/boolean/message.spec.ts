@@ -3,14 +3,14 @@ import Message from '../../dist/message';
 
 it('force console log', () => { spyOn(console, 'log').and.callThrough();});
 
-describe(`compiler compatible`,function() {
+it(`compiler compatible`,function() {
 
     let data : object = {null:null};
 
     if(Type(data)) {
         let message : Message = data;
     } else {
-        // @ts-expecerror
+        // @ts-expect-error
         let message : Message = data;
     }
 

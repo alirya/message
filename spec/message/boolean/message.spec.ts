@@ -4,7 +4,7 @@ import Message from '../../../dist/message';
 
 it('force console log', () => { spyOn(console, 'log').and.callThrough();});
 
-describe(`compiler compatible`,function() {
+it(`compiler compatible`,function() {
 
     let data : Message = {message:1};
 
@@ -14,7 +14,7 @@ describe(`compiler compatible`,function() {
 
     } else {
 
-        // @ts-expecerror
+        // @ts-expect-error
         let message : object = data.message;
     }
 
