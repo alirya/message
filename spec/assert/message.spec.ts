@@ -1,5 +1,4 @@
 import Message from '../../dist/assert/message';
-import MessageInterface from '../../dist/message';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

@@ -1,6 +1,6 @@
 import Guard from '../boolean/message';
-import Callback from '@alirya/function/assert/callback-parameters';
-import StringError from './throwable/message-parameters';
+import {CallbackParameters} from '@alirya/function/assert/callback';
+import {MessageParameters} from './throwable/message';
 import MessageInterface from '../message';
 
 
@@ -14,8 +14,8 @@ import MessageInterface from '../message';
  */
 export default function Message(
     value : object,
-    error : (value:object)=>Error = StringError
+    error : (value:object)=>Error = MessageParameters
 ) : asserts value is MessageInterface {
 
-    Callback(value, Guard, error);
+    CallbackParameters(value, Guard, error);
 }
