@@ -1,5 +1,5 @@
-import Value from '../../dist/message/value';
-import Message from '../../dist/message';
+import Value from '../../dist/message/value.js';
+import Message from '../../dist/message.js';
 
 it('force console log', () => { spyOn(console, 'log').and.callThrough();});
 

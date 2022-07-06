@@ -1,5 +1,5 @@
-import Infer from './infer';
-import Message from '../message';
+import Infer from './infer.js';
+import Message from '../message.js';
 
 /**
  * get {@link Message.message} value

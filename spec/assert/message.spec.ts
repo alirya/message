@@ -1,4 +1,4 @@
-import Message from '../../dist/assert/message';
+import Message from '../../dist/assert/message.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

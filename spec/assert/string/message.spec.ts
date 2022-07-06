@@ -1,4 +1,4 @@
-import {MessageParameters} from '../../../dist/assert/string/message';
+import {MessageParameters} from '../../../dist/assert/string/message.js';
 
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});

@@ -1,5 +1,5 @@
-import MessageInterface from '../message';
-import {ExistsParameters} from '@alirya/object/property/boolean/exists';
+import MessageInterface from '../message.js';
+import {ExistsParameters} from '@alirya/object/property/boolean/exists.js';
 
 /**
  * check if {@param value} is compatible with {@link MessageInterface}
