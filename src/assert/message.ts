@@ -1,7 +1,7 @@
-import Guard from '../boolean/message';
-import {CallbackParameters} from '@alirya/function/assert/callback';
-import {MessageParameters} from './throwable/message';
-import MessageInterface from '../message';
+import Guard from '../boolean/message.js';
+import {CallbackParameters} from '@alirya/function/assert/callback.js';
+import {MessageParameters} from './throwable/message.js';
+import MessageInterface from '../message.js';
 
 
 /**

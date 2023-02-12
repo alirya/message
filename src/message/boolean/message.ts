@@ -1,4 +1,4 @@
-import MessageInterface from '../../message';
+import MessageInterface from '../../message.js';
 
 export default function Message<
     Type

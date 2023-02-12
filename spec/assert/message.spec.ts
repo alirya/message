@@ -1,15 +1,15 @@
-import Message from '../../dist/assert/message';
+import Message from '../../dist/assert/message.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 it(`compiler compatible`,function() {
 
-    let data : object = {};
+    const data : object = {};
 
     try {
         Message(data);
 
-        let message : unknown = data.message;
+        const message : unknown = data.message;
 
         fail('exception should thrown');
 

@@ -1,17 +1,17 @@
-import Type from '../../dist/boolean/message';
-import Message from '../../dist/message';
+import Type from '../../dist/boolean/message.js';
+import Message from '../../dist/message.js';
 
 it('force console log', () => { spyOn(console, 'log').and.callThrough();});
 
 it(`compiler compatible`,function() {
 
-    let data : object = {null:null};
+    const data : object = {null:null};
 
     if(Type(data)) {
-        let message : Message = data;
+        const message : Message = data;
     } else {
         // @ts-expect-error
-        let message : Message = data;
+        const message : Message = data;
     }
 
 });
@@ -22,14 +22,14 @@ describe('unvalidated value', function() {
 
         it('string', () => {
 
-            let message = {message : 'string'};
+            const message = {message : 'string'};
             expect(Type(message)).toBe(true);
 
         });
 
         it('integer', () => {
 
-            let message = {message : 1};
+            const message = {message : 1};
             expect(Type(message)).toBe(true);
 
         });
@@ -39,14 +39,14 @@ describe('unvalidated value', function() {
 
         it('string', () => {
 
-            let message = {string:'string'};
+            const message = {string:'string'};
             expect(Type(message)).toBe(false);
 
         });
 
         it('integer', () => {
 
-            let message = {integer:1};
+            const message = {integer:1};
             expect(Type(message)).toBe(false);
 
         });
@@ -60,7 +60,7 @@ describe('validated value', function() {
 
         it('object', () => {
 
-            let message = {message :{}};
+            const message = {message :{}};
             expect(Type(message)).toBe(true);
         });
 
@@ -80,7 +80,7 @@ describe('validated value', function() {
 
         it('object', () => {
 
-            let message = {};
+            const message = {};
             expect(Type(message)).toBe(false);
         });
 

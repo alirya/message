@@ -1,8 +1,8 @@
-import MessageType from '../string/message';
-import {CallbackParameters} from '@alirya/function/assert/throwable/callback';
-import {ValidatableParameters} from '@alirya/validator/message/function/validatable';
-import Value from '@alirya/value/value';
-import Message from '../../message';
+import MessageType from '../string/message.js';
+import {CallbackParameters} from '@alirya/function/assert/throwable/callback.js';
+import {ValidatableParameters} from '@alirya/validator/message/function/validatable.js';
+import Value from '@alirya/value/value.js';
+import Message from '../../message.js';
 
 
 export function MessageParameters(

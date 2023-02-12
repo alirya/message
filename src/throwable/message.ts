@@ -1,8 +1,8 @@
-import Message from '../message';
-import SafeCast from '@alirya/string/safe-cast';
-import Value from '../message/value';
-import New from '@alirya/function/new';
-import ValueType from '@alirya/value/value';
+import Message from '../message.js';
+import SafeCast from '@alirya/string/safe-cast.js';
+import Value from '../message/value.js';
+import New from '@alirya/function/new.js';
+import ValueType from '@alirya/value/value.js';
 
 export function MessageParameters<MessageType extends Message>(
     message : MessageType,
