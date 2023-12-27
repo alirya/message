@@ -1,5 +1,5 @@
 import Guard from '../boolean/message.js';
-import {CallbackParameters} from '@alirya/function/assert/callback.js';
+import {CallbackParameters} from '@axiona/function/assert/callback.js';
 import {MessageParameters} from './throwable/message.js';
 import MessageInterface from '../message.js';
 

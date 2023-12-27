@@ -1,5 +1,5 @@
 import Type from '../../../dist/message/boolean/message.js';
-import ObjectType from '@alirya/object/boolean/object.js';
+import ObjectType from '@axiona/object/boolean/object.js';
 import Message from '../../../dist/message.js';
 
 it('force console log', () => { spyOn(console, 'log').and.callThrough();});

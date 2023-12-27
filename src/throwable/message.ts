@@ -1,8 +1,8 @@
 import Message from '../message.js';
-import SafeCast from '@alirya/string/safe-cast.js';
+import SafeCast from '@axiona/string/safe-cast.js';
 import Value from '../message/value.js';
-import New from '@alirya/function/new.js';
-import ValueType from '@alirya/value/value.js';
+import New from '@axiona/function/new.js';
+import ValueType from '@axiona/value/value.js';
 
 export function MessageParameters<MessageType extends Message>(
     message : MessageType,

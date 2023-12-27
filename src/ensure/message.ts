@@ -1,7 +1,7 @@
 import AssertString from '../assert/message.js';
 import MessageError from '../assert/throwable/message.js';
 import MessageInterface from '../message.js';
-import Value from '@alirya/value/value.js';
+import Value from '@axiona/value/value.js';
 
 /**
  * return {@param value} is compatible with {@link MessageInterface}

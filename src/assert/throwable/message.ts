@@ -1,7 +1,7 @@
 import MessageType from '../string/message.js';
-import {CallbackParameters} from '@alirya/function/assert/throwable/callback.js';
-import {ValidatableParameters} from '@alirya/validator/message/function/validatable.js';
-import Value from '@alirya/value/value.js';
+import {CallbackParameters} from '@axiona/function/assert/throwable/callback.js';
+import {ValidatableParameters} from '@axiona/validator/message/function/validatable.js';
+import Value from '@axiona/value/value.js';
 import Message from '../../message.js';
 
 
